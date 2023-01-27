@@ -1,0 +1,290 @@
+%%
+%% This is file `sample-xelatex.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `sigconf')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-sigconf.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%% Commands for TeXCount
+%TC:macro \cite [option:text,text]
+%TC:macro \citep [option:text,text]
+%TC:macro \citet [option:text,text]
+%TC:envir table 0 1
+%TC:envir table* 0 1
+%TC:envir tabular [ignore] word
+%TC:envir displaymath 0 word
+%TC:envir math 0 word
+%TC:envir comment 0 0
+%%
+%%
+%% The first command in your LaTeX source must be the \documentclass command.
+\documentclass[sigconf]{acmart}
+%% NOTE that a single column version may be required for 
+%% submission and peer review. This can be done by changing
+%% the \doucmentclass[...]{acmart} in this template to 
+%% \documentclass[manuscript,screen]{acmart}
+%% 
+%% To ensure 100% compatibility, please check the white list of
+%% approved LaTeX packages to be used with the Master Article Template at
+%% https://www.acm.org/publications/taps/whitelist-of-latex-packages 
+%% before creating your document. The white list page provides 
+%% information on how to submit additional LaTeX packages for 
+%% review and adoption.
+%% Fonts used in the template cannot be substituted; margin 
+%% adjustments are not allowed.
+%%
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+% \AtBeginDocument{%
+%   \providecommand\BibTeX{{%
+%     \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+
+% %% These commands are for a PROCEEDINGS abstract or paper.
+% \acmConference[Conference acronym 'XX]{Make sure to enter the correct
+%   conference title from your rights confirmation emai}{June 03--05,
+%   2018}{Woodstock, NY}
+% %
+% %  Uncomment \acmBooktitle if th title of the proceedings is different
+% %  from ``Proceedings of ...''!
+% %
+% %\acmBooktitle{Woodstock '18: ACM Symposium on Neural Gaze Detection,
+% %  June 03--05, 2018, Woodstock, NY} 
+% \acmPrice{15.00}
+% \acmISBN{978-1-4503-XXXX-X/18/06}
+
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%%
+%% For managing citations, it is recommended to use bibliography
+%% files in BibTeX format.
+%%
+%% You can then either use BibTeX with the ACM-Reference-Format style,
+%% or BibLaTeX with the acmnumeric or acmauthoryear sytles, that include
+%% support for advanced citation of software artefact from the
+%% biblatex-software package, also separately available on CTAN.
+%%
+%% Look at the sample-*-biblatex.tex files for templates showcasing
+%% the biblatex styles.
+%%
+
+%%
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title{Telidon Data Restoration: CPSC 503 Project Proposal}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+\author{Alexandra Tenney}
+\email{alexandra.tenney@ucalgary.ca}
+\authornote{Supervisor: Dr. John Aycock}
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+ How do we preserve our digital heritage? The Telidon computing system signifies a time in Canadian digital history when Canada took the lead on interconnected networks and graphics technology, and should be celebrated and preserved. It also marks the beginning of a new art Renaissance, where digital mediums take hold. But updating the files to modern standards is essential in this preservation, as a binary that is unviewable serves no value. This CPSC 503 project will attempt to restore Telidon data files within a binary backup of a Telidon system in order to continue the work of the University of Victoria Head Librarian, John Durno, and maintain a significant archive of Telidon artworks, updated to modern digital formats, so others can see.
+\end{abstract}
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+\keywords{Telidon, videotex, teletex, digital restoration, digital art}
+
+%% A "teaser" image appears between the author and affiliation
+%% information and the body of the document, and typically spans the
+% %% page.
+% \begin{teaserfigure}
+%   \includegraphics[width=\textwidth]{sampleteaser}
+%   \caption{Seattle Mariners at Spring Training, 2010.}
+%   \Description{Enjoying the baseball game from the third-base
+%   seats. Ichiro Suzuki preparing to bat.}
+%   \label{fig:teaser}
+% \end{teaserfigure}
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\section{Introduction}
+Telidon was a computing system designed and developed by the “Communications Research Center of the Canadian Federal Department of Communications (DoC) during 1970-1978” to display graphics using Teletex/Videotex protocols \cite{Tenne-Sens82}. Teletex is a one-way communication protocol and is transmitted via a television signal; Videotex is a two-way communication protocol transmitted via telephone cables \cite{boyko_1996}. The first public demonstration of the Telidon system was held on August 15th, 1978 \cite{boyko_1996}, and by 1979, the DoC began to work on commercializing Telidon and its technology. It ran a series of field trials throughout Canada, most notably Grassroots, based in Manitoba, where farmers could use Telidon to gain information about upcoming weather and crop prices, and Teleguide, where Telidon were used as an electronic Michelin Guide in the Toronto area for tourists \cite{miller_1983}. \\ \\
+
+Teldion was not the only computing system in the world at the time to attempt to harness these two protocols and had direct competition via Minitel, France’s computing system \cite{alma_2017}, and Prestel, the United Kingdom’s computing system\cite{hudson_1983}. Eventually, all three nations looked to the United States to pick a system and ultimately decide on a front-runner. \\ \\ 
+
+AT\&T, a telecommunications company within the USA, entered discussions with the Canadian DoC, as Telidon was essentially hardware dependent, and the company wished to be compatible with Telidon without buying into the hardware. In 1983, AT\&T and the DoC rolled out North American Presentation Level Protocol Syntax (NAPLPS), a new protocol to encode graphics data. By demonstrating a willingness to work with the Canadian computing system and developing a North American standard, which Minitel eventually adapted, and Telidon was the first to integrate,  Telidon was dictated as the clear winner \cite{alma_1985}. Despite this, due to a series of problems, Telidon never gained traction within households, and eventually, the government withdrew funding for Telidon in 1985, sealing the computer’s fate \cite{boyko_1996}.
+
+\subsection{Motivation}
+
+The tenure of the Telidon was short-lived, but it signifies a significant era of history. Telidon, along with Minitel and Prestel, represents “a larger, more worldwide effort to create mass-market interactive telecommunication networks” in a pre-world wide web era \cite{durno}. People wanted to be connected through the digital realm, and engineers knew it was technologically possible, but the details of how this interconnectedness would come were still fuzzy. One can make connections between the development of the world-wide-web, which has a meaningful impact on culture and economy in the modern world, from the roots of Teletex/Videotex systems. Additionally, Telidon represents a moment in history when Canada became a technological leader \cite{alma_1985}. Telidon, thus, is a significant part of our digital heritage and warrants preservation. Consequently, it is essential to preserve and update files from these systems to newer, readable formats to ensure they can be studied in the future.
+
+
+\subsection{The Problem}
+I will attempt to recover a Telidon filesystem that has been stored as a binary dump. This is because the Telidon system was initially backed up on a magnetic tape, using the technology available at the time. Library and Archives Canada (LAC), who were given the tape to store, attempted to back up the data from the tape into a modern format. Upon doing so LAC found that the magnetic tape has been damaged, and as a result, some of the filesystems that were backed up ended up corrupted. A binary backup was provided within the files, as well. While some files have been recovered from these modern tape back ups, there are other files present in the binary, that have not been seen recovered from the tape files. My task, therefore, is to attempt to reverse engineer the binary data back into the individual Telidon files it contains.  \\ \\
+
+The Telidon filesystem I intend to investigate is also known to have different Telidon artworks stored within, the recovery of which is the project's primary goal. “Artists rise to the technology they have access to,” and those who could access Telidon, within shopping malls or airports where they were left, would often create, using ASCII as their medium \cite{hampton_2018}. The idea that people would generate art from computers seems evident from a modern perspective. Still, in the Telidon era, where it was uncommon for a home to contain a personal computer, Telidon artists were the “first internet artists” \cite{hampton_2018}. Again, recovering this lost art is essential for preserving our digital heritage.
+
+
+\subsection{Approach}
+
+Upon inspection of the files provided by LAC, there are two distinct types of files the Telidon archives provide. The first of the two are all prefixed with G00015xx, and clearly correspond to attempted backups of the tapes. There would have been software in existence within LAC that could dump the tapes data into a textual format. Inspecting these files within a text editor reveals ASCII text which seemingly corresponds to different pointers within the Telidon database. In addition to this text is some amount of unreadable characters, as well as long lines of numbers between 50 and 180. It is likely that those lines of numbers correspond with more ASCII, which is the basis of NAPLPS. Below is a tabular view of the files. \\ \\
+
+\begin{table}[h]
+\begin{tabular}{|l|l|lll}
+\cline{1-2}
+  & Tape Filenames &  &  &  \\ \cline{1-2}
+0 & G0001554\_BCDA &  &  &  \\ \cline{1-2}
+1 & G001555\_BA   &  &  &  \\ \cline{1-2}
+2 & G0001556\_AB   &  &  &  \\ \cline{1-2}
+3 & G0001557       &  &  &  \\ \cline{1-2}
+4 & G0001558       &  &  &  \\ \cline{1-2}
+\end{tabular}
+\end{table}
+
+Initially, these tape files came fragmented, with letters to distinguish the files. G0001554 came instead as 4 different files, while both G0001555 and G0001556 came as two separate files. The project supervisor, Dr. John Aycock, has recovered the data from undamaged areas of these tape files with a Python script and knowledge of legacy computing systems. During the development of his script, Aycock discovered that these fragmented files each belong to a tape, and determined the order in which they should be concatenated back together. Figure 1 expresses this concatenation in the order of the lettered fragments. \\ \\
+
+This script extracted many of the existing files within the binary backup. However, upon further examination of the binary, Durno was able to find strings of other possible files which were not revealed through Aycock’s program. There were also sections of PDP-11 assembly code contained within the prefixedthat was not present in the tape files. It is now pertinent to discuss the other files. The second type of files found within the archive are a binary backup of the Telidon system, and are prefixed with P111xx. Below again, gives a tabular view of these files. \\ \\
+
+\begin{table}[h]
+\begin{tabular}{lllll}
+\cline{1-2}
+\multicolumn{1}{|l|}{}  & \multicolumn{1}{l|}{Binary Filenames} &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{0} & \multicolumn{1}{l|}{P11189}           &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{1} & \multicolumn{1}{l|}{P11191}           &  &  &  \\ \cline{1-2}
+\end{tabular}
+\end{table}
+
+
+Documentation also contained within the archived files from the time of the Telidon backup reveal that the tapes in which this Telidon system was backed up from were damaged, and portions of the backup failed. Upon running Aycock's script, several errors are detected, indicating that it is the case. It is likely that the corrupted sections of the tape files are in; G0001554\_B and G0001556\_A.  \\ \\
+
+The first step to recover these missing files within the Telidon filesystem is to take the information Aycock's script is extracting, and attempt to find where the missing files lie within the binary files. Given this, there are two possible ways to approach the problem of file recovery: look at the corrupted data to determine what is missing, or look at the non-corrupted data to ensure it correctly renders all the data. Each of these approached focuses on different files provided by the archive. Focusing on the corrupted sections of tape files makes an assumption that Aycock's script is extracting all sections of non-corrupted data correctly, and that the ordering of the binary will exactly match the ordering of the tape files. However, this approach is enticing in the fact that it significantly narrows down the data in which to reversprefixed thatFocusing on the non-corrupted portions means there is a larger amount of data to reverse engineer and worry about, but does not make assumptions about the structure of the binary, or the work that was done before. \\ \\ 
+
+Given that the project's timeline is short, one is most likely to uncover more files within the non-corrupted part of the file-system (only a tiny percentage of the file-system is corrupted, compared to the total size); I plan to focus on the non-corrupted aspects of the data. If time permits, I will then move on to the corrupted sections. 
+
+\subsection{Success}
+
+Ideally, by the end of the project term, I will have created a mapping of binary data to actual Telidon files that encompass the entirety of the binary dump. This would have a corresponding program, which I intend to write in the Python programming language, which could generate the files of other binary dumps of Telidon filesystems. However, success for this project would simply be the ability to extract missing files not in Aycock’s original script, with some degree of confidence I am not missing others.
+
+\subsection{Contribution}
+
+Researchers interested in Telidon often come from non-technical fields and backgrounds; Durno is a library technologist \cite{durno_2022}, and William (Bill) Perry was an artist/researcher \cite{perry}. Yet the two researchers make up much of the archival work relating to the Telidon system. This is not to say none of these people are technical; instead, their primary field does not focus on information technology or computer science. Thus, having a researcher whose background is focused on computing systems serves value, as we have a keen advantage in restoring Telidon archives in which the archival process has failed or has yet to be followed. The development of a program that can read filesystems obtained from a Telidon computing system also ensures those who wish to do archival work of Telidon systems can focus on the archival and not retrieve the files. \\ \\ 
+
+Telidon is an example of a Teletex/Videotex system, but there are others in history. Finally, my work might interest others who wish to restore or archive other Teletex/Videotex systems. Since many of these systems use the same protocol, the program this work creates could be easily adapted or would give other developers hints on how to move forward with their agenda.
+
+
+\section{Related Work}
+
+I have already mentioned three researchers interested in the restoration of Telidon; Durno and Perry’s work most closely resembles the work I will be doing, mainly because the two are interested in the artistic works developed and contained in Telidon. Durno commissioned the work of the project. His work began in 2015 at the request of an archivist to restore digital artworks that were contained within the University of Victoria archives \cite{durno_gallery}, of which Durno was the Head of Library Systems \cite{durno_2022}. Since then, Durno has created a “comprehensive Telidon Art Archive” and continued to add restored renderable Telidon works \cite{durno_2022}. He has also developed a “DOSBox Telidon Terminal Emulator,” which allows for Telidon works that had been backed up to floppy disks but not modern formats to be recovered \cite{durno_2022}. For some of Durno’s work, Perry was a “primary collaborator” \cite{durno_2022}, specifically in the Telidon Archival Project (TAP) which archived "nearly 20,000 born-digital (Telidon) computer graphics" \cite{tap}, but his interest in Telidon did not begin with Durno. According to his resume, Perry is an accomplished artist and has been creating Telidon art since 1981 \cite{perry}. \\ \\ 
+
+Durno is largely the only academic actively working towards Telidon restoration or archival, based on my own research. Any other directly related work comes from hobbyists and enthusiasts. Despite this, Durno is not the first researcher to attempt to recover files from an old computing system, or update existing files into more modern format. One can find academics like Richard Hess, who has documented the various causes, and possible solutions for magnetic tape degradation, including "sticky shed syndrome", which describes the deterioration of the binders within the tape\cite{hess_2008}. Eddie Ciletti \cite{ciletti_1998}, Rich Rarey\cite{rarey_1995}, Mike Rivers \cite{rivers_newton} and others have documented the method of "baking" these tapes in order to rebind the tapes, allowing the data to be read and archived in modern formats. While this work is not directly related, it is relevant to the general study sphere in which my work sits. More clearly relevant, Durno himself has done extensive work recovering different files off of 5.25" \cite{durno_trofimchuk_2015} floppy disks, work that led him to the Telidon. Charles Levi, "an archivist in the Collections Development and Management Unit at the Archives of Ontario", has also done significant work on floppy disks and documented the issues and process of restoring "currently unsupported and obsolete formats" into modern, readable ones \cite{levi2011five}.
+
+
+\section{Proposed Work}
+
+My project term has three major components: a set of files recovered from the Telidon memory dump; second, a companion paper outlining my findings and research throughout a project; finally, a presentation to demonstrate my research term. Additionally, I have been given a series of assignments throughout the course in which to complete, all of which are written tasks. These written tasks include a literature review with a corresponding reflection, three research opportunity summaries, and finally, a final report paired with a final reflection. Some of these written assignments align with work I had already intended to complete as a part of the project, namely the literature review and the final report. The work for these three major components as well as the additional assignments, including proposed deadlines, can be found in the next section.
+
+\section{Timeline}
+
+Note: Some of the deadlines for the written assignments correspond with those found on D2L, while others do not. This is to ensure I am able to finish both the written aspects of the work, as well as the technical, project based aspects. 
+
+\begin{enumerate}
+    \item Mark the sections of the binary which have been successfully rendered to compare to the areas which have not been successfully reverse-engineered yet
+        \subitem \emph{Deadline: January 30th, 2023} \
+    \item Research Opportunity Summary (A) 
+        \subitem \emph{Deadline: February 5, 2023} \
+    \item Finish the Literary Review for the field, which will be incorporated into the final paper 
+        \subitem \emph{Deadline: February 17, 2023} \
+    \item Finish the Literary Review Reflection 
+        \subitem \emph{Deadline: February 17, 2023} \
+    \item Create a mapping of Record File Addresses (RFA)/Keys (database pointers) to their corresponding pages, and determine how to differentiate between RFAs and keys 
+        \subitem \emph{Deadline: February 20, 2023} \
+    \item Research Opportunity Summary (B) 
+        \subitem \emph{Deadline: February 25, 2023} \
+    \item Design an algorithm to restore and render the first Telidon file manually 
+        \subitem \emph{Deadline: March 1, 2023} \
+    \item Program a script to automate the same manual algorithm 
+        \subitem \emph{Deadline: March 6, 2023} \
+    \item Research Opportunity Summary (C) 
+        \subitem \emph{Deadline: March 12, 2023} \
+    \item Design and program a larger script to generate multiple files within the filesystem.
+        \subitem \emph{Deadline: March 20, 2023} \
+    \item Write Final Report dictating and analyzing my findings.
+        \subitem \emph{Deadline: April 1, 2023} \
+    \item Final Report Reflection
+        \subitem \emph{Deadline: April 7, 2023} \
+    \item Create a presentation of the project term. 
+        \subitem \emph{Deadline: April 12, 2023} \
+    \item Present my project presentation.
+        \subitem \emph{Deadline: April 21, 2023} \\
+\end{enumerate}
+
+My timeline may seem very tight, but it is developed with the goal in mind that a program will be created to reverse engineer the entire Telidon binary and extract all the files. Sometimes, our work does not go as we plan, and I have created this timeline with this in mind. My primary focus as I go into the true work of this project is to mark the binary data in which has already been extracted. Once this work is done, it will be clear, from other operations such as running the Linux command "strings" on the binary, how many files are missing from Aycock's original reconstruction of the binary. This will ultimately determine the course of the project, because if there are very few files missing, it may be worth manually reconstructing them. Thus, if pieces of the project take seemingly longer than planned due to roadblocks or bugs, there is a deemed "Minimal Viable Product" in which this work is still meaningful. This timeline is a best-case scenario of the work term ahead. 
+
+%%
+%% The acknowledgments section is defined using the "acks" environment
+%% (and NOT an unnumbered section). This ensures the proper
+%% identification of the section in the article metadata, and the
+%% consistent spelling of the heading.
+% \begin{acks}
+% To Robert, for the bagels and explaining CMYK and color spaces.
+% \end{acks}
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample-base}
+
+%%
+%% If your work has an appendix, this is the place to put it.
+\appendix
+
+\end{document}
+\endinput
+%%
+%% End of file `sample-xelatex.tex'.
